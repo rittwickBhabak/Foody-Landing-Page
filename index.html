@@ -12,10 +12,10 @@
     <title>Foody | Bootstrap Project 1</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav" id="home">
 
     <!-- Navbar section  -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
         <div class="container">
             <a href="index.html" class="navbar-brand">Foody</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -24,16 +24,16 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home-header-section" class="nav-link">Recipes</a>
+                        <a href="#home" class="nav-link">Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#explore-header-section" class="nav-link">Blog</a>
+                        <a href="#explore-section-head" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#create-header-section" class="nav-link">About</a>
+                        <a href="#create-section-head" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#share-header-section" class="nav-link">Contact Us</a>
+                        <a href="#share-section-head" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -85,20 +85,20 @@
                                 <p>Please fill out the form to get our new recipies!</p>
                                 <form>
                                     <div class="form-group">
-                                        <input type="text" name="username" id="username" class="form-control form-control-lg"
-                                            placeholder="Username">
+                                        <input type="text" name="username" id="username"
+                                            class="form-control form-control-lg" placeholder="Username">
                                     </div>
                                     <div class="form-group">
                                         <input type="email" name="email" id="email" class="form-control form-control-lg"
                                             placeholder="Email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" name="password" id="password" class="form-control form-control-lg"
-                                            placeholder="Pasword">
+                                        <input type="password" name="password" id="password"
+                                            class="form-control form-control-lg" placeholder="Pasword">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" name="confirm_password" id="confirm_password" class="form-control form-control-lg"
-                                            placeholder="Confirm Password">
+                                        <input type="password" name="confirm_password" id="confirm_password"
+                                            class="form-control form-control-lg" placeholder="Confirm Password">
                                     </div>
                                     <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
                                 </form>
@@ -109,13 +109,16 @@
             </div>
         </div>
     </header>
+
+
     <!-- Explore header seciton  -->
     <section id="explore-section-head">
         <div class="container">
             <div class="row">
                 <div class="col text-center py-5">
                     <h1 class="display-4">Explore New Recipes</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod natus distinctio aperiam autem magni maiores inventore quas sunt, mollitia explicabo?</p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod natus distinctio
+                        aperiam autem magni maiores inventore quas sunt, mollitia explicabo?</p>
                     <a href="#" class="btn btn-outline-secondary text-white">Explore Now</a>
                 </div>
             </div>
@@ -131,13 +134,15 @@
                 </div>
                 <div class="col-md-6">
                     <h3>Explore & Connect</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod commodi nihil accusamus consequuntur ab impedit magni facilis odit aliquid!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod commodi nihil accusamus
+                        consequuntur ab impedit magni facilis odit aliquid!</p>
                     <div class="d-flex">
                         <div class="align-item-start p-4">
                             <i class="fa fa-check fa-2x"></i>
                         </div>
                         <div class="align-item-end p-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum dolorum sequi vel totam quo.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum dolorum sequi
+                            vel totam quo.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -145,15 +150,173 @@
                             <i class="fa fa-check fa-2x"></i>
                         </div>
                         <div class="align-item-end p-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum dolorum sequi vel totam quo.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum dolorum sequi
+                            vel totam quo.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Create Head Section  -->
+    <section id="create-section-head" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1 class="display-4">Home made street food</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod natus distinctio
+                        aperiam autem magni maiores inventore quas sunt, mollitia explicabo?</p>
+                    <a href="#" class="btn btn-outline-light">Explore Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create-body-section -->
+    <section id="create-section" class="py-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-2">
+                    <img src="img/create.jpg" alt="" class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col-md-6 order-1">
+                    <h3>Tasty and Healthy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod commodi nihil accusamus
+                        consequuntur ab impedit magni facilis odit aliquid!</p>
+                    <div class="d-flex">
+                        <div class="align-item-start p-4">
+                            <i class="fa fa-check fa-2x"></i>
+                        </div>
+                        <div class="align-item-end p-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum dolorum sequi
+                            vel totam quo.
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="align-item-start p-4">
+                            <i class="fa fa-check fa-2x"></i>
+                        </div>
+                        <div class="align-item-end p-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum dolorum sequi
+                            vel totam quo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share header seciton  -->
+    <section id="share-section-head" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1 class="display-4">Share Your Recipe</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod natus distinctio
+                        aperiam autem magni maiores inventore quas sunt, mollitia explicabo?</p>
+                    <a href="#" class="btn btn-outline-light">Explore Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share-body-section -->
+    <section id="share-section" class="bg-light text-muted py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/explore.jpg" alt="" class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col-md-6">
+                    <h3>If you cannot share the food share how it is prepared</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod commodi nihil accusamus
+                        consequuntur ab impedit magni facilis odit aliquid!</p>
+                    <div class="d-flex">
+                        <div class="align-item-start p-4">
+                            <i class="fa fa-check fa-2x"></i>
+                        </div>
+                        <div class="align-item-end p-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum dolorum sequi
+                            vel totam quo.
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="align-item-start p-4">
+                            <i class="fa fa-check fa-2x"></i>
+                        </div>
+                        <div class="align-item-end p-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, earum dolorum sequi
+                            vel totam quo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-4">
+                    <h3>Foody</h3>
+                    <p>Copyright &copy; <span id="year"></span></p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact</button>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="face text-dark modal" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="contactname" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Name</label>
+                            <input type="email" name="email" id="contactemail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="contactmessage" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
     <script src='js/jQuery.js'></script>
     <script src='js/bootstrap.js'></script>
+    <script>
+        $('body').scrollspy({target:'#main-nav'});
+        $('#main-nav a').on('click', function(event){
+            if(this.hash!=""){
+                event.preventDefault();
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                })
+            }
+        })
+    </script>
 </body>
 
 </html>

@@ -33,13 +33,13 @@ body{
 #home-section .card-form{
     opacity: 0.8;
 }
-#home-section .fa {
+#home-section .fa , #create-section .fa{
     padding: 5px;
     color: #008ed6;
     border-radius: 5px;
     background-color: white;
 }
-#explore-section .fa{
+#explore-section .fa, #share-section .fa{
     padding: 5px;
     color: white;
     border-radius: 5px;
